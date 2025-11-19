@@ -1,7 +1,5 @@
 🧭 NAVBAR CONTENT
 
-Keep it light and conversion-focused:
-
 Home
 
 How It Works

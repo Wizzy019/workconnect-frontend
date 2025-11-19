@@ -1,9 +1,9 @@
-import React from 'react'
+import Navbar from './components/layout/Navbar'
 
 function App() {
   return (
     <div>
-      Workconnecat app
+      <Navbar />
     </div>
   )
 }
