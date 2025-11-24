@@ -11,6 +11,7 @@ import Local from '../assets/images/Local.jpg'
 import Macketing from '../assets/images/Marketing.jpg'
 import LayerBackgroundImage from '../assets/images/Bgimage.jpeg'
 import Footer from '../components/layout/Footer'
+import Navbar from '../components/layout/Navbar'
 
 const BulletPoint = ({icon, label}) => (
       <div className='size-50 flex flex-col items-center justify-evenly bg-white shadow-lg rounded-xl p-2 text-sm cursor-pointer'>
@@ -56,6 +57,7 @@ function Home() {
 
   return (
     <>
+    <Navbar />
     <section className="w-full h-screen md:h-96 bg-center bg-cover relative" 
     style={{backgroundImage: `linear-gradient(rgba(0,9,0,0.5),rgba(0,9,0,0.9)),url(${BackgroundImage})`}}
     >
@@ -63,9 +65,9 @@ function Home() {
         gap-4 p-2 text-center'>
             <h1 className='text-4xl font-bold text-white '>Connect With Real Work. Build Real Income</h1>
             <h3 className='text-2xl font-semibold text-white'>WorkConnect links skilled people to real-time job opportunities — fast, simple, and trustworthy</h3>
-            <button className='bg-emerald-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-emerald-700 transition'>
-                <Link  className='text-white'>Get Started</Link>
-            </button>
+            <Link to="register" className='text-white'>
+            <button className='bg-emerald-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-emerald-700 transition hidden md:block'
+          >Get Started</button></Link>
         </div>
     </section>
     <section className='md:min-h-84 text-center text-pretty px-2 py-6 bg-[#e0ffe9]'>
@@ -109,9 +111,9 @@ function Home() {
      </div>
      <div className='flex flex-col md:flex-row items-center justify-between w-full md:w-1/3 m-10 p-2'>
       <p className='text-xl text-white'>Ready to Get Started?</p>
-      <button className='bg-emerald-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-emerald-700 transition mt-3'>
-        <Link className='text-white'>Get Started</Link>
-       </button>
+      <Link to="register" className='text-white'>
+            <button className='bg-emerald-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-emerald-700 transition hidden md:block'
+          >Get Started</button></Link>
      </div>
     </section>
     <section className='bg-[#e0ffe9]'>

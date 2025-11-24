@@ -9,7 +9,7 @@ function Navbar() {
     const [open, setOpen] = useState(false);
 
     const NavItems = [
-      {name: "Home", path: "landing"},
+      {name: "Home", path: "register"},
       {name: "How It Works", path: ""},
       {name: "Find Work", path: ""},
       {name: "Hire Talent", path: ""},
@@ -37,9 +37,10 @@ function Navbar() {
             </NavLink>
             ))}
        </nav>
-       <button className='bg-emerald-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-emerald-700 transition hidden md:block'>
-        <Link className='text-white'>Get Started</Link>
-       </button>
+       <Link to="register" className='text-white'>
+       <button className='bg-emerald-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-emerald-700 transition hidden md:block'
+       >Get Started</button></Link>
+       
     </header>
   )
 }

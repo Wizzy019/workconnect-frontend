@@ -1,8 +1,8 @@
 Pages
 
-Home page
+Home page //
 
-Login / Signup
+Login / Signup /
 
 Dashboard
 
